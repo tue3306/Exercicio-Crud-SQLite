@@ -1,10 +1,15 @@
+Aqui está o **README.md** formatado corretamente para o **GitHub**, mantendo a estrutura com **separação correta das seções**. Agora ele está completo e pronto para **copiar e colar** sem perder a formatação.
+
+---
+
+```md
 # 📌 CRUD de Estoque com SQLite  
 
 ## 🎯 Objetivo  
 Este projeto tem como objetivo aplicar os conceitos de **SQLite** e operações **CRUD** (*Create, Read, Update, Delete*) em Python,  
 desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gráfica** (usando apenas terminal).
 
-
+---
 
 ## 🚀 Funcionalidades  
 
@@ -18,7 +23,7 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 ✅ **Relatório Rápido** – Mostra estatísticas sobre os produtos no estoque.  
 ✅ **Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
 
-
+---
 
 ## 🔧 Tecnologias Utilizadas  
 
@@ -26,13 +31,12 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 - 🗄️ **SQLite** para armazenamento de dados  
 - 🔎 **Tratamento de erros** para entrada de dados inválidos  
 
-
+---
 
 ## 📝 Exemplos de Uso  
 
-
 ### 🆕 Criando um Produto  
-
+```md
 ========== MENU DE ESTOQUE ==========
 1) Criar novo produto
 Escolha uma opção: 1
@@ -45,11 +49,10 @@ Fornecedor: Logitech
 Descrição: Teclado mecânico RGB switch Red
 
 Produto 'Teclado Mecânico' adicionado ao estoque!
+```
 
-
-### 📋 Listando Produtos
-
-
+### 📋 Listando Produtos  
+```md
 ========== MENU DE ESTOQUE ==========
 2) Listar produtos
 Escolha uma opção: 2
@@ -57,11 +60,10 @@ Escolha uma opção: 2
 === Lista de Produtos ===
 ID: 1 | Nome: Teclado Mecânico | Qtd: 10 | Preço: R$199.90
 Total de produtos: 1
+```
 
-
-### ✏️ Atualizando um Produto
-
-
+### ✏️ Atualizando um Produto  
+```md
 ========== MENU DE ESTOQUE ==========
 3) Atualizar produto
 Escolha uma opção: 3
@@ -71,11 +73,10 @@ Nova quantidade [Enter p/ não mudar]: 15
 Novo preço (R$) [Enter p/ não mudar]: 189.90
 
 Produto 'Teclado Mecânico' atualizado com sucesso!
+```
 
-
-### ❌ Deletando um Produto
-
-
+### ❌ Deletando um Produto  
+```md
 ========== MENU DE ESTOQUE ==========
 4) Deletar produto
 Escolha uma opção: 4
@@ -84,11 +85,10 @@ ID do produto a deletar: 1
 Tem certeza que deseja excluir o produto ID=1? (S/N): S
 
 Produto 'Teclado Mecânico' removido do estoque!
+```
 
-
-### 📊 Relatório Rápido
-
-
+### 📊 Relatório Rápido  
+```md
 ========== MENU DE ESTOQUE ==========
 8) Relatório rápido (quantidade / valor total)
 Escolha uma opção: 8
@@ -97,4 +97,23 @@ Escolha uma opção: 8
 Total de Produtos: 5
 Quantidade Total: 150
 Valor Total do Estoque: R$ 7,500.00
+```
 
+---
+
+## ⚠️ Dificuldades Encontradas e Soluções  
+
+
+### 🔹 **Evitando Estoque Negativo**  
+O sistema permitia a movimentação do estoque (entrada e saída de produtos), mas poderia aceitar valores negativos incorretamente.  
+✅ **Solução:** Adicionada uma verificação para impedir que a quantidade de um produto fique abaixo de zero.  
+
+### 🔹 **Tratamento de Erros no SQLite**  
+Tentativas de inserir nomes duplicados causavam erros no banco de dados.  
+✅ **Solução:** Adicionada captura de exceção (`try/except`) para evitar falhas e exibir mensagens amigáveis ao usuário.  
+
+### 🔹 **Fechamento Seguro do Banco de Dados**  
+O banco de dados poderia permanecer aberto caso o programa fosse fechado abruptamente.  
+✅ **Solução:** O `db_manager.close()` foi chamado no final do programa para garantir o fechamento correto da conexão.  
+
+---
