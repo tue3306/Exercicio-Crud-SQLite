@@ -4,7 +4,7 @@
 Este projeto tem como objetivo aplicar os conceitos de **SQLite** e operações **CRUD** (*Create, Read, Update, Delete*) em Python,  
 desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gráfica** (usando apenas terminal).
 
----
+
 
 ## 🚀 Funcionalidades  
 
@@ -18,7 +18,7 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 ✅ **Relatório Rápido** – Mostra estatísticas sobre os produtos no estoque.  
 ✅ **Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
 
----
+
 
 ## 🔧 Tecnologias Utilizadas  
 
@@ -26,12 +26,13 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 - 🗄️ **SQLite** para armazenamento de dados  
 - 🔎 **Tratamento de erros** para entrada de dados inválidos  
 
----
+
 
 ## 📝 Exemplos de Uso  
 
+
 ### 🆕 Criando um Produto  
-```md
+
 ========== MENU DE ESTOQUE ==========
 1) Criar novo produto
 Escolha uma opção: 1
@@ -45,7 +46,9 @@ Descrição: Teclado mecânico RGB switch Red
 
 Produto 'Teclado Mecânico' adicionado ao estoque!
 
+
 ### 📋 Listando Produtos
+
 
 ========== MENU DE ESTOQUE ==========
 2) Listar produtos
@@ -55,7 +58,9 @@ Escolha uma opção: 2
 ID: 1 | Nome: Teclado Mecânico | Qtd: 10 | Preço: R$199.90
 Total de produtos: 1
 
+
 ### ✏️ Atualizando um Produto
+
 
 ========== MENU DE ESTOQUE ==========
 3) Atualizar produto
@@ -67,7 +72,9 @@ Novo preço (R$) [Enter p/ não mudar]: 189.90
 
 Produto 'Teclado Mecânico' atualizado com sucesso!
 
+
 ### ❌ Deletando um Produto
+
 
 ========== MENU DE ESTOQUE ==========
 4) Deletar produto
@@ -78,7 +85,9 @@ Tem certeza que deseja excluir o produto ID=1? (S/N): S
 
 Produto 'Teclado Mecânico' removido do estoque!
 
+
 ### 📊 Relatório Rápido
+
 
 ========== MENU DE ESTOQUE ==========
 8) Relatório rápido (quantidade / valor total)
