@@ -1,8 +1,4 @@
-Aqui está o **README.md** formatado corretamente para o **GitHub**, mantendo a estrutura com **separação correta das seções**. Agora ele está completo e pronto para **copiar e colar** sem perder a formatação.
 
----
-
-```md
 # 📌 CRUD de Estoque com SQLite  
 
 ## 🎯 Objetivo  
