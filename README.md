@@ -9,15 +9,15 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 
 ## 🚀 Funcionalidades  
 
-✅ **Criar Produto** – Adiciona um novo produto ao banco de dados.  
-✅ **Listar Produtos** – Exibe todos os produtos cadastrados.  
-✅ **Atualizar Produto** – Permite modificar a quantidade, preço e outras informações de um produto.  
-✅ **Deletar Produto** – Remove um produto do banco de dados.  
-✅ **Movimentar Estoque** – Entrada ou saída de produtos no estoque.  
-✅ **Duplicar Produto** – Clona um produto existente com um novo nome.  
-✅ **Ver Histórico** – Exibe todas as operações realizadas no estoque.  
-✅ **Relatório Rápido** – Mostra estatísticas sobre os produtos no estoque.  
-✅ **Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
+**Criar Produto** – Adiciona um novo produto ao banco de dados.  
+**Listar Produtos** – Exibe todos os produtos cadastrados.  
+**Atualizar Produto** – Permite modificar a quantidade, preço e outras informações de um produto.  
+**Deletar Produto** – Remove um produto do banco de dados.  
+**Movimentar Estoque** – Entrada ou saída de produtos no estoque.  
+**Duplicar Produto** – Clona um produto existente com um novo nome.  
+**Ver Histórico** – Exibe todas as operações realizadas no estoque.  
+**Relatório Rápido** – Mostra estatísticas sobre os produtos no estoque.  
+**Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
 
 ---
 
@@ -25,7 +25,6 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 
 - 🐍 **Python 3.x**  
 - 🗄️ **SQLite** para armazenamento de dados  
-- 🔎 **Tratamento de erros** para entrada de dados inválidos  
 
 ---
 
