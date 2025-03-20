@@ -5,7 +5,7 @@
 Este projeto tem como objetivo aplicar os conceitos de **SQLite** e operações **CRUD** (*Create, Read, Update, Delete*) em Python,  
 desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gráfica** (usando apenas terminal).
 
----
+
 
 ## 🚀 Funcionalidades  
 
@@ -19,14 +19,14 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 **Relatório Rápido** – Mostra estatísticas sobre os produtos no estoque.  
 **Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
 
----
+
 
 ## 🔧 Tecnologias Utilizadas  
 
 - 🐍 **Python 3.x**  
 - 🗄️ **SQLite** para armazenamento de dados  
 
----
+
 
 ## 📝 Exemplos de Uso  
 
@@ -94,7 +94,7 @@ Quantidade Total: 150
 Valor Total do Estoque: R$ 7,500.00
 ```
 
----
+
 
 ## ⚠️ Dificuldades Encontradas e Soluções  
 
