@@ -111,4 +111,4 @@ Tentativas de inserir nomes duplicados causavam erros no banco de dados.
 O banco de dados poderia permanecer aberto caso o programa fosse fechado abruptamente.  
 ✅ **Solução:** O `db_manager.close()` foi chamado no final do programa para garantir o fechamento correto da conexão.  
 
----
+
