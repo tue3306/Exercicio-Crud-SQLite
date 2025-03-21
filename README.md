@@ -99,7 +99,7 @@ Valor Total do Estoque: R$ 7,500.00
 ## ⚠️ Dificuldades Encontradas e Soluções  
 
 
-### 🔹 **Evitando Estoque Negativo**  
+### 🔹 **Estoque Negativo**  
 O sistema permitia a movimentação do estoque (entrada e saída de produtos), mas poderia aceitar valores negativos incorretamente.  
 ✅ **Solução:** Adicionada uma verificação para impedir que a quantidade de um produto fique abaixo de zero.  
 
@@ -107,8 +107,5 @@ O sistema permitia a movimentação do estoque (entrada e saída de produtos), m
 Tentativas de inserir nomes duplicados causavam erros no banco de dados.  
 ✅ **Solução:** Adicionada captura de exceção (`try/except`) para evitar falhas e exibir mensagens amigáveis ao usuário.  
 
-### 🔹 **Fechamento Seguro do Banco de Dados**  
-O banco de dados poderia permanecer aberto caso o programa fosse fechado abruptamente.  
-✅ **Solução:** O `db_manager.close()` foi chamado no final do programa para garantir o fechamento correto da conexão.  
 
 
