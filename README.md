@@ -20,14 +20,6 @@ desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gr�
 **Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
 
 
-
-## 🔧 Tecnologias Utilizadas  
-
-- 🐍 **Python 3.x**  
-- 🗄️ **SQLite** para armazenamento de dados  
-
-
-
 ## 📝 Exemplos de Uso  
 
 ### 🆕 Criando um Produto  
