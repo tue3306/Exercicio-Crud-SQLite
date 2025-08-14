@@ -1,29 +1,33 @@
+# 📌 CRUD de Estoque com SQLite
 
-# 📌 CRUD de Estoque com SQLite  
+> **Atenção**: Projeto desenvolvido para fins educacionais.
 
-## 🎯 Objetivo  
-Este projeto tem como objetivo aplicar os conceitos de **SQLite** e operações **CRUD** (*Create, Read, Update, Delete*) em Python,  
-desenvolvendo um sistema simples de gerenciamento de estoque **sem interface gráfica** (usando apenas terminal).
+Este projeto implementa um sistema de gerenciamento de estoque simples, utilizando **SQLite** e operações **CRUD** (*Create, Read, Update, Delete*) em Python, sem interface gráfica (apenas terminal).
 
+---
 
+## 🎯 Objetivo
+Aplicar os conceitos de **SQLite** e operações **CRUD** no desenvolvimento de um sistema que permita gerenciar produtos, controlar movimentações e gerar relatórios.
 
-## 🚀 Funcionalidades  
+---
 
-**Criar Produto** – Adiciona um novo produto ao banco de dados.  
-**Listar Produtos** – Exibe todos os produtos cadastrados.  
-**Atualizar Produto** – Permite modificar a quantidade, preço e outras informações de um produto.  
-**Deletar Produto** – Remove um produto do banco de dados.  
-**Movimentar Estoque** – Entrada ou saída de produtos no estoque.  
-**Duplicar Produto** – Clona um produto existente com um novo nome.  
-**Ver Histórico** – Exibe todas as operações realizadas no estoque.  
-**Relatório Rápido** – Mostra estatísticas sobre os produtos no estoque.  
-**Opção de Sair** – Encerra o programa e fecha a conexão com o banco.  
+## 🚀 Funcionalidades Principais
+- **Criar Produto** – Adiciona um novo produto ao banco de dados.
+- **Listar Produtos** – Exibe todos os produtos cadastrados.
+- **Atualizar Produto** – Modifica quantidade, preço e outras informações.
+- **Deletar Produto** – Remove um produto do banco de dados.
+- **Movimentar Estoque** – Entrada ou saída de produtos.
+- **Duplicar Produto** – Clona um produto existente com novo nome.
+- **Ver Histórico** – Mostra todas as operações realizadas.
+- **Relatório Rápido** – Apresenta estatísticas do estoque.
+- **Opção de Sair** – Encerra o programa e fecha a conexão.
 
+---
 
-## 📝 Exemplos de Uso  
+## 📝 Exemplos de Uso
 
-### 🆕 Criando um Produto  
-```md
+### 🆕 Criando um Produto
+```bash
 ========== MENU DE ESTOQUE ==========
 1) Criar novo produto
 Escolha uma opção: 1
@@ -38,8 +42,8 @@ Descrição: Teclado mecânico RGB switch Red
 Produto 'Teclado Mecânico' adicionado ao estoque!
 ```
 
-### 📋 Listando Produtos  
-```md
+### 📋 Listando Produtos
+```bash
 ========== MENU DE ESTOQUE ==========
 2) Listar produtos
 Escolha uma opção: 2
@@ -49,8 +53,8 @@ ID: 1 | Nome: Teclado Mecânico | Qtd: 10 | Preço: R$199.90
 Total de produtos: 1
 ```
 
-### ✏️ Atualizando um Produto  
-```md
+### ✏️ Atualizando um Produto
+```bash
 ========== MENU DE ESTOQUE ==========
 3) Atualizar produto
 Escolha uma opção: 3
@@ -62,8 +66,8 @@ Novo preço (R$) [Enter p/ não mudar]: 189.90
 Produto 'Teclado Mecânico' atualizado com sucesso!
 ```
 
-### ❌ Deletando um Produto  
-```md
+### ❌ Deletando um Produto
+```bash
 ========== MENU DE ESTOQUE ==========
 4) Deletar produto
 Escolha uma opção: 4
@@ -74,8 +78,8 @@ Tem certeza que deseja excluir o produto ID=1? (S/N): S
 Produto 'Teclado Mecânico' removido do estoque!
 ```
 
-### 📊 Relatório Rápido  
-```md
+### 📊 Relatório Rápido
+```bash
 ========== MENU DE ESTOQUE ==========
 8) Relatório rápido (quantidade / valor total)
 Escolha uma opção: 8
@@ -86,18 +90,16 @@ Quantidade Total: 150
 Valor Total do Estoque: R$ 7,500.00
 ```
 
+---
 
+## ⚠️ Dificuldades Encontradas e Soluções
 
-## ⚠️ Dificuldades Encontradas e Soluções  
+### 🔹 Estoque Negativo
+O sistema permitia movimentações que poderiam deixar o estoque negativo.  
+✅ **Solução:** Implementada verificação para impedir que a quantidade seja inferior a zero.
 
+### 🔹 Tratamento de Erros no SQLite
+Inserções com nomes duplicados geravam falhas no banco de dados.  
+✅ **Solução:** Adicionada captura de exceções (`try/except`) para exibir mensagens amigáveis ao usuário.
 
-### 🔹 **Estoque Negativo**  
-O sistema permitia a movimentação do estoque (entrada e saída de produtos), mas poderia aceitar valores negativos incorretamente.  
-✅ **Solução:** Adicionada uma verificação para impedir que a quantidade de um produto fique abaixo de zero.  
-
-### 🔹 **Tratamento de Erros no SQLite**  
-Tentativas de inserir nomes duplicados causavam erros no banco de dados.  
-✅ **Solução:** Adicionada captura de exceção (`try/except`) para evitar falhas e exibir mensagens amigáveis ao usuário.  
-
-
-
+---
