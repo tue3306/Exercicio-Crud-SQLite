@@ -92,14 +92,3 @@ Valor Total do Estoque: R$ 7,500.00
 
 ---
 
-## ⚠️ Dificuldades Encontradas e Soluções
-
-### 🔹 Estoque Negativo
-O sistema permitia movimentações que poderiam deixar o estoque negativo.  
-✅ **Solução:** Implementada verificação para impedir que a quantidade seja inferior a zero.
-
-### 🔹 Tratamento de Erros no SQLite
-Inserções com nomes duplicados geravam falhas no banco de dados.  
-✅ **Solução:** Adicionada captura de exceções (`try/except`) para exibir mensagens amigáveis ao usuário.
-
----
